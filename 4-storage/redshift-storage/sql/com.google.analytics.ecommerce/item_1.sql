@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_ecommerce_item_1 (
     "code"           VARCHAR(500),
     "currency"       CHAR(3),
     "name"           VARCHAR(500),
-    "price"          DOUBLE PRECISION,
+    "price"          decimal(36,2),
     "quantity"       BIGINT,
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)
 )

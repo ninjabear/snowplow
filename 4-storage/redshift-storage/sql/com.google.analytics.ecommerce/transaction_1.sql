@@ -19,9 +19,9 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_ecommerce_transaction_1 (
     "affiliation"    VARCHAR(500),
     "currency"       CHAR(3),
     "id"             VARCHAR(500),
-    "revenue"        DOUBLE PRECISION,
-    "shipping"       DOUBLE PRECISION,
-    "tax"            DOUBLE PRECISION,
+    "revenue"        dec(36,2),
+    "shipping"       dec(36,2),
+    "tax"            dec(36,2),
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)
 )
 DISTSTYLE KEY

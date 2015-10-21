@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_enhanced_ecommerce_produc
     "list"           VARCHAR(500),
     "name"           VARCHAR(500),
     "position"       BIGINT,
-    "price"          DOUBLE PRECISION,
+    "price"          dec(36,2),
     "quantity"       BIGINT,
     "variant"        VARCHAR(500),
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)

@@ -22,10 +22,10 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_enhanced_ecommerce_action
     "id"             VARCHAR(500),
     "list"           VARCHAR(500),
     "option"         VARCHAR(500),
-    "revenue"        DOUBLE PRECISION,
-    "shipping"       DOUBLE PRECISION,
+    "revenue"        dec(36,2),
+    "shipping"       dec(36,2),
     "step"           BIGINT,
-    "tax"            DOUBLE PRECISION,
+    "tax"            dec(36,2),
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)
 )
 DISTSTYLE KEY
