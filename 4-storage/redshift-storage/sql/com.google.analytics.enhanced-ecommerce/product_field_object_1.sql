@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_enhanced_ecommerce_produc
     "id"             VARCHAR(500),
     "list"           VARCHAR(500),
     "name"           VARCHAR(500),
-    "position"       BIGINT,
+    "position"       INT,
     "price"          dec(36,2),
     "quantity"       BIGINT,
     "variant"        VARCHAR(500),

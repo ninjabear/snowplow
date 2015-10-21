@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS atomic.com_google_analytics_enhanced_ecommerce_action
     "option"         VARCHAR(500),
     "revenue"        dec(36,2),
     "shipping"       dec(36,2),
-    "step"           BIGINT,
+    "step"           INT,
     "tax"            dec(36,2),
     FOREIGN KEY (root_id) REFERENCES atomic.events(event_id)
 )
